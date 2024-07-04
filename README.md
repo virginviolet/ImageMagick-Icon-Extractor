@@ -18,3 +18,11 @@ Usage: `extract_icons {input_file} [outfiles_format]`
 `{input_file}` is the file you want to extract from.
 
 `[outfiles_format]`: Optional parameter. If you want to convert all icons to a perticular format, specify it here, after `{input_file}`. If not specified, the icons will only be extracted, not converted.
+
+## Issues
+
+If ImageMagick gives you an error, it might be that the file only contains one icon.
+
+Try to convert the file instead: `magick {input_file} {output_file}`
+
+Example: `magick my_icon.ico my_icon_converted.png`
