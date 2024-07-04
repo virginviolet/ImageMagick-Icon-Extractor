@@ -3,9 +3,15 @@ ICO is a container format that can contain multiple icons.
 
 This is a batch script to extract icons from ICO files, and optionally convert them to any format.
 
+## Installation
+
+1. Install ImageMagick, if you haven't already.
+2. Download extract_icons.bat to any folder.
+3. (Optional) If you want to be able to use this script in the command line from any folder like a normal program, add the script's folder to your Path environment variable.
+
 ## Usage
 
-Install ImageMagick, if you haven't already.
+Run the script in a command prompt.
 
 Usage: `extract_icons {input_file} [outfiles_format]`
 
