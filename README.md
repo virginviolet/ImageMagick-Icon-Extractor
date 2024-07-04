@@ -1,5 +1,6 @@
 # ImageMagick-Icon-Extractor
 ICO is a container format that can contain multiple icons.
+
 This is a batch script to extract icons from ICO files, and optionally convert them to any format.
 
 ## Usage
