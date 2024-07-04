@@ -23,6 +23,12 @@ Usage: `extract_icons {input_file} [outfiles_format]`
 
 If ImageMagick gives you an error, it might be that the file only contains one icon.
 
-Try to convert the file instead: `magick {input_file} {output_file}`
+As a fallback, you might want to convert the file instead: `magick {input_file} {output_file}`
 
 Example: `magick my_icon.ico my_icon_converted.png`
+
+## Assembling ICO
+
+If you want to put one or multiple images into an ICO container (assemble into one ICO file):
+1. Put all pictures alone in one folder.
+2. In that directory, run `magick * {output_file}`
