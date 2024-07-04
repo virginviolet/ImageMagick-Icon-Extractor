@@ -33,7 +33,7 @@ magick identify -format "%%m\n" "!inputfilepath!" >icons.log
 echo Extracting icons.
 
 rem Create the output directory
-mkdir !outdir!
+mkdir "!outdir!"
 
 rem Line number when parsing icons.log
 set "lineNumber=-1"
@@ -49,7 +49,7 @@ for /f "tokens=*" %%a in (icons.log) do (
         set "outformat=%%a"
     )
 
-    magick !inputfile!!inputext![!lineNumber!] !inputfile!-!lineNumber!.!outformat!
+    magick "!inputfilepath!"[!lineNumber!] "!inputfile!-!lineNumber!.!outformat!"
     if !errorlevel! equ 0 (
         move "!inputfile!-!lineNumber!.!outformat!" "!outdir!\!inputfile!-!lineNumber!.!outformat!" >nul
         echo Extracted !inputfile!-!lineNumber!.!outformat!.
